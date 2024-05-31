@@ -1,0 +1,10 @@
+.root {
+	padding: 10px 20px;
+	background-color: rgb(9, 131, 202);
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 14px;
+	border-radius: 12px;
+	cursor: pointer;
+}
