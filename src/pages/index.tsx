@@ -1,6 +1,5 @@
-import React from "react";
-import { CounterProvider } from "../components/organisms/CounterProvider";
 import CounterView from "../components/views/CounterView";
+import CounterProvider from "@/components/organisms/CounterProvider";
 
 const HomePage = () => {
   return (

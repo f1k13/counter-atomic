@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import { FC, ReactNode } from "react";
 
 type TextProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 const Text: FC<TextProps> = ({ children }) => {

@@ -1,17 +1,18 @@
-import React, { FC } from "react";
+import {FC, memo} from "react";
 import Button from "../atoms/Button";
 import Text from "../atoms/Text";
+
 type ButtonTextProps = {
-  text: string;
-  onClick: () => void;
+    text: string;
+    onClick: () => void;
 };
 
-const ButtonText: FC<ButtonTextProps> = ({ text, onClick }) => {
-  return (
-    <Button onClick={onClick}>
-      <Text>{text}</Text>
-    </Button>
-  );
+const ButtonText: FC<ButtonTextProps> = ({text, onClick}) => {
+    return (
+        <Button onClick={onClick}>
+            <Text>{text}</Text>
+        </Button>
+    );
 };
 
-export default ButtonText;
+export const MemoButtonText = memo(ButtonText);

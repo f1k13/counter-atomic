@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { CounterContext } from "./CounterProvider";
-import ButtonText from "../molecules/ButtonText";
+import { MemoButtonText } from "../molecules/ButtonText";
 
 const IncrementButton = () => {
   const counterContext = useContext(CounterContext);
@@ -11,7 +11,7 @@ const IncrementButton = () => {
     );
   }
 
-  return <ButtonText text="Увеличить" onClick={counterContext.increment} />;
+  return <MemoButtonText text="Увеличить" onClick={counterContext.increment} />;
 };
 
 export default IncrementButton;

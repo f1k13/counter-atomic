@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import IncrementButton from "../organisms/IncrementButton";
 import DecrementButton from "../organisms/DecrementButton";
 import { CounterContext } from "../organisms/CounterProvider";
@@ -10,10 +10,9 @@ const CounterView = () => {
   if (!counterContext) {
     throw new Error("CounterView не используется в компоненте CounterProvider");
   }
-
   return (
     <div className={styles.root}>
-      <Text>{counterContext.index}</Text>
+      <Text>{counterContext.newIndex}</Text>
       <IncrementButton />
       <DecrementButton />
     </div>
